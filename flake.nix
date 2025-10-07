@@ -34,6 +34,7 @@
     devShells.${system}.default = pkgs.mkShell rec {
       nativeBuildInputs = with pkgs; [
         gdb
+        gdb-dashboard
         probe-rs-tools
         minicom
         cargo-binutils
