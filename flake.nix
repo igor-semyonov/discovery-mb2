@@ -22,11 +22,10 @@
     fenixPkgs = fenix.packages.${system};
     rustToolchain = with fenixPkgs;
       combine [
-        # Add the stable toolchain components
         stable.rustc
         stable.cargo
-        # Add the llvm-tools component, which provides binutils
         stable.llvm-tools
+        targets.thumbv7em-none-eabihf.stable.rust-std
       ];
     # fenixLib = fenix.packages.${system};
     # rustToolchain = fenixLib.complete.toolchain;
