@@ -2,7 +2,6 @@
 #![no_main]
 
 use cortex_m_rt::entry;
-use embedded_hal::delay::DelayNs;
 use microbit::{
     board::Board, display::blocking::Display, hal::Timer,
 };
