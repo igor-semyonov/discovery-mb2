@@ -26,6 +26,8 @@
         stable.cargo
         stable.llvm-tools
         targets.thumbv7em-none-eabihf.stable.rust-std
+        stable.clippy
+        stable.rust-analyzer
       ];
     # fenixLib = fenix.packages.${system};
     # rustToolchain = fenixLib.complete.toolchain;
