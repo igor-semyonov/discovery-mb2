@@ -41,8 +41,9 @@
       ];
       buildInputs = with pkgs; [
         rustToolchain
+        llvmPackages.libunwind
       ];
-      # LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath buildInputs;
+      LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath buildInputs;
     };
   };
 }
